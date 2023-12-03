@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+.center_div {
+    max-width: 800px;
+    margin: 50px auto;
+    border: 3px dashed #2b49bc;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0 #3e66ff;
+}
+
+.title {
+    color: #3e66ff;
+    line-height: 40px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.des {
+    line-height: 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button74 {
+    background-color: white;
+    border: 2px solid #2b49bc;
+    border-radius: 30px;
+    box-shadow: #2b49bc 4px 4px 0 0;
+    color: #2b49bc;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 20px 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button74:hover {
+    background-color: #2b49bc;
+    color: white;
+}
+
+.button74:active {
+    box-shadow: #2b49bc 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .button74 {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
+
+.text_align {
+    text-align: center;
+}

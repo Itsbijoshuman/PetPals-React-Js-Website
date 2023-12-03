@@ -1,0 +1,172 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 50px auto;
+  justify-content: space-around;
+}
+
+.profile {
+  flex-wrap: wrap;
+  width: 25%;
+  min-width: 350px;
+  padding: 20px;
+  color: black;
+  padding-bottom: 100px;
+}
+
+.profileHeading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.petContainer {
+  width: 70%;
+}
+
+.profileInfo {
+  position: sticky;
+  top: 30px;
+}
+
+.sticky {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 20px 30px;
+  background-color: white;
+}
+
+.profileInfo p {
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.profileImage {
+  text-align: center;
+  margin: 10px auto 20px auto;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-radius: 100px;
+}
+
+.profileImage img {
+  height: 200px;
+  border-radius: 100px;
+}
+
+.image {
+  margin-bottom: 10px;
+  height: 50%;
+  min-height: 350px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.petTile {
+  width: 28%;
+  min-width: 330px;
+  margin: 10px;
+  height: 495px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: black;
+  position: relative;
+  background-color: white;
+}
+
+.pets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.petContainer h1 {
+  margin: 20px;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.pets h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.capital {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 5px 0;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.pets h5 {
+  text-align: center;
+  margin: 5px 0;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.edit {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button74 {
+  background-color: #2b49bc;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: background-color 0.3s ease;
+}
+
+.button74:hover {
+  background-color: #3e66ff;
+}
+
+.button74:active {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.liked {
+  text-align: center;
+}
+
+.liked .button74 {
+  margin-top: 10px;
+}
+
+.select {
+  width: 250px;
+  margin: 20px auto;
+}
+
+.btnContainer {
+  margin: 10px;
+  text-align: center;
+}

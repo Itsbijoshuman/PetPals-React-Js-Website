@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Classic:wght@400;700&family=League+Spartan&display=swap");
+
+body {
+  font-family: "Montserrat Classic", sans-serif;
+  margin: 0;
+}
+
+.container {
+  height: 80vh;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/project2-petpals.appspot.com/o/screen%2F2spalsh.svg?alt=media&token=6bf8f7f4-69b3-4da2-8575-4b347fe96fd4&_gl=1*10h06ih*_ga*MTc5MzUxMjg0My4xNjk2NjIzMTU5*_ga_CW55HF8NVT*MTY5NjYyNzQ4NC4yLjEuMTY5NjYyODE1Mi4xMi4wLjA.");
+  background-size: cover;
+}
+
+.centerDiv {
+  width: 30vw;
+  min-width: 400px;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.title {
+  font-family: "League Spartan", sans-serif;
+  font-size: 55px;
+  color: #2b49bc;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.des {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.sub_title {
+  font-family: "Montserrat Classic", sans-serif;
+  font-size: 30px;
+  color: #2b49bc;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.button87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #b02770;
+  background-image: linear-gradient(45deg, #001d62 0%, #1d41d0 100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button87:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button87:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+}

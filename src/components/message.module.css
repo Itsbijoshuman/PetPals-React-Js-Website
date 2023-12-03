@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+button {
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+
+/* --------------- Chat CSS --------------------- */
+.content {
+  width: 100%;
+}
+
+.useContainer {
+  padding: 10px 20px;
+}
+.chatbox {
+  border-radius: 8px;
+}
+.Chat {
+  text-align: center;
+  max-width: 728px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #e1e1e1;
+  min-height: 80px;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  z-index: 99;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 70px 300px;
+  border-radius: 8px 8px 0 0;
+}
+
+.header h1 {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.header img {
+  border-radius: 60px;
+}
+
+.Chat section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.mainChat {
+  padding: 10px;
+  margin: 0;
+  overflow-y: scroll;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  word-break: break-all;
+  white-space: normal;
+  border-left: 3px solid #e1e1e1;
+}
+
+.mainChat::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.mainChat::-webkit-scrollbar-track {
+  background: #a8a8a8;
+}
+
+.mainChat::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+}
+
+.messageForm {
+  height: 80px;
+  background-color: rgb(24, 23, 23);
+  width: 100%;
+  display: flex;
+  font-size: 1.5rem;
+  border-radius: 8px;
+}
+
+.button {
+  width: 20%;
+  background-color: #dcf8ef;
+}
+
+/* message.module.css */
+.messageInput {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: #d1d1d1;
+  color: black;
+  outline: 2px solid #282c34; /* Add this line to set the outline */
+  border: none;
+  padding: 0 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+button {
+  background-color: #282c34; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.text {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: rgb(136, 136, 136);
+  background-color: #fee2f8;
+  background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+  align-self: flex-end;
+}
+
+.received p {
+  background-color: #aee1f9;
+  background-image: linear-gradient(315deg, #aee1f9 0%, #f6ebe6 74%);
+  color: black;
+}
+
+.Icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.form-label {
+  font-size: 40px;
+}
+
+.messageListCont {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  margin: 20px auto;
+  max-width: 70vw;
+  min-width: 500px;
+}
+
+.messageComponent {
+  border: 2px solid #282c34; /* Add an outline to the chat container */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 80h; /* Set the height to take up the full viewport height */
+  margin: 20px;
+  max-width: 728px; /* Set the maximum width */
+  align-self: center; /* Center the chat container horizontally */
+}
+
+.messageIcon {
+  width: 60px;
+}
+
+.header h1 {
+  margin-left: 10px;
+}
+
+.userIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 10px;
+}
+/* message.module.css */
+/* ... other styles ... */
+
+.messageComponent {
+  border: 2px solid #282c34;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  margin: 20px auto; /* Center the chat box horizontally */
+  max-width: 728px;
+  align-self: center;
+}
+.sent {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.received {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.text {
+  max-width: 70%;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  display: inline-block;
+}
+
+.sent .text {
+  background-color: #282c34;
+}
+
+.received .text {
+  background-color: #000000;
+}
+
+.botMessage {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background-color: #000000;
+  border-radius: 15px;
+  color: black;
+  max-width: 70%;
+  margin-bottom: 10px;
+}
+
+.messageText {
+  white-space: pre-line;
+}
+
+/* ... other styles ... */

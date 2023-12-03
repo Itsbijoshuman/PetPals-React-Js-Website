@@ -1,0 +1,36 @@
+
+.container {
+    width: 60%;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+.consent {
+    margin: 20px 0 ;
+}
+
+.consent:active {
+    transform: scale(0.9);
+}
+
+.container h1 {
+    margin: 20px;
+    text-align: center;
+}
+
+.container h2, h3 {
+    margin: 10px 0;
+}
+
+
+.container ul {
+    margin: 20px;
+}
+
+.container li {
+    margin: 10px 40px;
+}
+
+.cats p {
+    margin: 10px 0;
+}

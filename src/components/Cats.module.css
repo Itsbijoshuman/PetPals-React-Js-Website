@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Classic:wght@400;700&family=League+Spartan&display=swap");
+
+.div {
+  text-align: center;
+}
+
+.container_dog {
+  background-color: white;
+  width: 80%;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 50px auto;
+  border: 3px dashed #2b49bc;
+  box-shadow: 40px 20px 0 #2b49bc;
+}
+
+.container_cat {
+  background-color: white;
+  width: 80%;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0 auto 50px auto;
+  border: 3px dashed #3e66ff;
+  box-shadow: -40px 20px 0 #3e66ff;
+}
+
+.home_title {
+  font-family: "League Spartan", sans-serif;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: linear-gradient(to right, #000 10%, #2b49bc 50%, #3e66ff 60%, #fff 80%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+  margin-bottom: 20px;
+  border-bottom: 2px dotted black;
+  padding: 10px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

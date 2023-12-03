@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+.container {
+	width: 80%;
+	margin: 100px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.text_align {
+	text-align: center;
+}
+
+.pet_index_card {
+	width: 30%;
+	min-width: 420px;
+	margin: 1.5% 1.5%;
+	padding: 20px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	position: relative;
+	padding-bottom: 100px;
+	background-color: white;
+}
+
+.pet_index_card:hover {
+	transform: translateY(-10px);
+}
+
+.pet_image {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}
+
+.pet_name {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-family: 'League Spartan', sans-serif;
+	color: #2b49bc;
+}
+
+.button_div {
+	position: absolute;
+	bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.button74 {
+	background-color: #2b49bc;
+	border: 2px solid #2b49bc;
+	border-radius: 30px;
+	box-shadow: #2b49bc 4px 4px 0 0;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 18px;
+	padding: 0 18px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	margin: 5px 10px;
+	min-width: 120px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.button74:hover {
+	background-color: #3e66ff;
+}
+
+.button74:active {
+	box-shadow: #3e66ff 2px 2px 0 0;
+	transform: translate(2px, 2px);
+}
+.nopetsmessage {
+	/* Style for the message when there are no pets */
+	text-align: center;
+	font-size: 18px;
+	color: #888;
+	margin-top: 20px;
+  }

@@ -1,0 +1,76 @@
+import React, { useState, useRef, useEffect } from "react";
+import style from "./message.module.css"; // Import the CSS file
+
+const EmergencyChatBox = () => {
+  const [messages, setMessages] = useState([
+    { message: "Hello! What type of emergency are you facing?\n1. Medical Emergency\n2. Found a Stray", from: "bot" }
+  ]);
+  const [message, setMessage] = useState("");
+  const dummy = useRef();
+
+  const predefinedResponses = {
+    "1": `Please stay calm. Reach out to the following emergency contacts:
+  1. Sanjeecvni Pet Hospital: 922242424242
+  2. Mathur Pet Ambulance: 1800883`,
+    "2": `The following shelters accept strays. Kindly contact them:
+  1. SAHAARA, Bellandur: 888284
+  2. HumSaathi Animal Rescue: 1842904`
+  }; 
+  useEffect(() => {
+    dummy.current.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
+
+  const handleSendMessage = () => {
+    if (message.trim() === "1" || message.trim() === "2") {
+      const selectedType = message.trim();
+      const botResponse = predefinedResponses[selectedType];
+      setMessages([...messages, { message: `You: Emergency Type - ${selectedType}`, from: "user" }]);
+      setMessages([...messages, { message: `Bot: ${botResponse}`, from: "bot" }]);
+    } else {
+      setMessages([...messages, { message: `You: ${message}`, from: "user" }]);
+      setMessages([...messages, { message: "Bot: I'm sorry, I didn't understand. Please select 1 or 2.", from: "bot" }]);
+    }
+    setMessage("");
+  };
+
+  return (
+    <div className={style.messageComponent}>
+      <div className={style.header}>
+        <div className={style.userIcon}></div>
+        <h1>Emergency Chat</h1>
+      </div>
+      <div className={style.mainChat}>
+        {messages.map((msg, index) => (
+          <div
+            key={index}
+            className={`message ${
+              msg.from === "user" ? style.sent : style.received
+            }`}
+          >
+            <div className={`${style.text} ${style.msgText}`}>
+              {msg.message}
+            </div>
+          </div>
+        ))}
+        <span ref={dummy}></span>
+      </div>
+      <div className={style.messageForm}>
+        <input
+          className={style.messageInput}
+          type="text"
+          placeholder="Type your message..."
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
+        <button
+          className={`${style.button} ${style.sendButton}`}
+          onClick={handleSendMessage}
+        >
+          🕊️
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default EmergencyChatBox;

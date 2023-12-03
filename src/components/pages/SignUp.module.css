@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Classic:wght@400;700&family=League+Spartan&display=swap");
+
+.input {
+  display: block;
+  margin: 10px auto;
+  width: 20vw;
+  min-width: 200px;
+  padding: 10px;
+}
+
+.container {
+  border: 3px solid rgba(231, 231, 231, 0.65);
+  margin: auto;
+  text-align: center;
+  width: 40vw;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 50px;
+  box-shadow: 10px 10px 10px rgba(188, 188, 188, 0.2);
+  background-color: white;
+  min-width: 300px;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  padding: 50px;
+  margin-top: 40px;
+}
+
+.button74 {
+  background-color: #2b49bc;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Montserrat Classic", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: background-color 0.3s ease;
+}
+
+.button74:hover {
+  background-color: #3e66ff ;
+}
+
+.button74:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(2px);
+}
+
+@media (min-width: 768px) {
+  .button74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+.errorMessage {
+  color: red;
+  margin-top: 10px;
+}
